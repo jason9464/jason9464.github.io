@@ -1,0 +1,13 @@
+diff --git a/_config.yml b/_config.yml
+index 647e129..983cd71 100644
+--- a/_config.yml
++++ b/_config.yml
+@@ -4,7 +4,7 @@
+ 
+ title: blank # the website title (if blank, full name will be used instead)
+ first_name: Jaeseung
+-middle_name: 
++middle_name:
+ last_name: Heo
+ contact_note: >
+   You can even add a little note about which of these is the best way to reach you.
