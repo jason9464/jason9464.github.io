@@ -384,8 +384,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-page-facing-up-a-paper-has-been-accepeted-to-ijcai-2024",
-          title: ':page_facing_up: A paper has been accepeted to IJCAI 2024.',
+            },},{id: "news-page-facing-up-a-paper-has-been-accepted-to-ijcai-2024",
+          title: ':page_facing_up: A paper has been accepted to IJCAI 2024.',
           description: "",
           section: "News",},{id: "news-page-facing-up-a-paper-has-been-accepeted-to-icml-2024",
           title: ':page_facing_up: A paper has been accepeted to ICML 2024.',
