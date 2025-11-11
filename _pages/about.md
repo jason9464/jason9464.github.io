@@ -25,5 +25,3 @@ latest_posts:
 
 Hi, I’m Jaeseung Heo, a Ph.D. student at POSTECH.
 I study how data processing (e.g., augmentation) can improve model training and how data influences models (e.g., through influence functions and Shapley values). My primary research focus is on graph-structured data and its unique challenges.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
