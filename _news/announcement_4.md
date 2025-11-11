@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I’m delighted to share that I recently got married and began a new chapter in my life.
+I’m delighted to share that I recently got married and began a new chapter in my life. :ring:
