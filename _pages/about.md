@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>jsheo12304@postech.ac.kr
+subtitle: jsheo12304@postech.ac.kr
 
 profile:
   align: right
