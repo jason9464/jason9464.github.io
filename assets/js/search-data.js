@@ -395,7 +395,7 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "news-i-m-delighted-to-share-that-i-recently-got-married-and-began-a-new-chapter-in-my-life",
+          section: "News",},{id: "news-i-m-delighted-to-share-that-i-recently-got-married-and-began-a-new-chapter-in-my-life-ring",
           title: 'I’m delighted to share that I recently got married and began a new...',
           description: "",
           section: "News",},{id: "projects-project-1",
