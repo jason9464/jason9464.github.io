@@ -23,5 +23,5 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi, I’m Jaeseung Heo, a Ph.D. student at POSTECH.
+Hi, I’m Jaeseung Heo, a Ph.D. student at [POSTECH ML Lab](https://ml.postech.ac.kr) under the supervision of [Prof. Dongwoo Kim](https://dongwookim.postech.ac.kr).
 I study how data processing (e.g., augmentation) can improve model training and how data influences models (e.g., through influence functions and Shapley values). My primary research focus is on graph-structured data and its unique challenges.
