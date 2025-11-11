@@ -11,6 +11,27 @@
   abstract={Soft labels can improve the generalization of a neural network classifier in many domains, such as image classification. Despite its success, the current literature has overlooked the efficiency of label smoothing in node classification with graph-structured data. In this work, we propose a simple yet effective label smoothing for the transductive node classification task. We design the soft label to encapsulate the local context of the target node through the neighborhood label distribution. We apply the smoothing method for seven baseline models to show its effectiveness. The label smoothing methods improve the classification accuracy in 10 node classification datasets in most cases. In the following analysis, we find that incorporating global label statistics in posterior computation is the key to the success of label smoothing. Further investigation reveals that the soft labels mitigate overfitting during training, leading to better generalization performance.}
 }
 
+@article{heo2025influence,
+  title={Influence Functions for Edge Edits in Non-Convex Graph Neural Networks},
+  author={Heo, Jaeseung and Yun, Kyeongheung and Yoon, Seokwon and Park, MoonJeong and Ok, Jungseul and Kim, Dongwoo},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2025},
+  selected={true},
+  arxiv={2506.04694},
+  abstract={Understanding how individual edges influence the behavior of graph neural networks (GNNs) is essential for improving their interpretability and robustness. Graph influence functions have emerged as promising tools to efficiently estimate the effects of edge deletions without retraining. However, existing influence prediction methods rely on strict convexity assumptions, exclusively consider the influence of edge deletions while disregarding edge insertions, and fail to capture changes in message propagation caused by these modifications. In this work, we propose a proximal Bregman response function specifically tailored for GNNs, relaxing the convexity requirement and enabling accurate influence prediction for standard neural network architectures. Furthermore, our method explicitly accounts for message propagation effects and extends influence prediction to both edge deletions and insertions in a principled way. Experiments with real-world datasets demonstrate accurate influence predictions for different characteristics of GNNs. We further demonstrate that the influence function is versatile in applications such as graph rewiring and adversarial attacks.}
+}
+
+@article{heo2023epic,
+  title={EPIC: graph augmentation with edit path interpolation via learnable cost},
+  author={Heo*, Jaeseung and Lee*, Seungbeom and Ahn, Sungsoo and Kim, Dongwoo},
+  journal={International Joint Conference on Artificial Intelligence (IJCAI)},
+  year={2024},
+  selected={true},
+  arxiv={2306.01310},
+  abstract={Data augmentation plays a critical role in improving model performance across various domains, but it becomes challenging with graph data due to their complex and irregular structure. To address this issue, we propose EPIC (Edit Path Interpolation via learnable Cost), a novel interpolation-based method for augmenting graph datasets. To interpolate between two graphs lying in an irregular domain, EPIC leverages the concept of graph edit distance, constructing an edit path that represents the transformation process between two graphs via edit operations. Moreover, our method introduces a context-sensitive cost model that accounts for the importance of specific edit operations formulated through a learning framework. This allows for a more nuanced transformation process, where the edit distance is not merely count-based but reflects meaningful graph attributes. With randomly sampled graphs from the edit path, we enrich the training set to enhance the generalization capability of classification models. Experimental evaluations across several benchmark datasets demonstrate that our approach outperforms existing augmentation techniques in many tasks.}
+}
+
+
 @article{park2025oversmoothing,
   title={The Oversmoothing Fallacy: A Misguided Narrative in GNN Research},
   author={Park, MoonJeong and Choi, Sunghyun and Heo, Jaeseung and Park, Eunhyeok and Kim, Dongwoo},
@@ -31,25 +52,6 @@
   abstract={Graph Neural Network (GNN) resembles the diffusion process, leading to the over-smoothing of learned representations when stacking many layers. Hence, the reverse process of message passing can produce the distinguishable node representations by inverting the forward message propagation. The distinguishable representations can help us to better classify neighboring nodes with different labels, such as in heterophilic graphs. In this work, we apply the design principle of the reverse process to the three variants of the GNNs. Through the experiments on heterophilic graph data, where adjacent nodes need to have different representations for successful classification, we show that the reverse process significantly improves the prediction performance in many cases. Additional analysis reveals that the reverse mechanism can mitigate the over-smoothing over hundreds of layers.}
 }
 
-@article{heo2025influence,
-  title={Influence Functions for Edge Edits in Non-Convex Graph Neural Networks},
-  author={Heo, Jaeseung and Yun, Kyeongheung and Yoon, Seokwon and Park, MoonJeong and Ok, Jungseul and Kim, Dongwoo},
-  journal={Advances in Neural Information Processing Systems (NeurIPS)},
-  year={2025},
-  selected={true},
-  arxiv={2506.04694},
-  abstract={Understanding how individual edges influence the behavior of graph neural networks (GNNs) is essential for improving their interpretability and robustness. Graph influence functions have emerged as promising tools to efficiently estimate the effects of edge deletions without retraining. However, existing influence prediction methods rely on strict convexity assumptions, exclusively consider the influence of edge deletions while disregarding edge insertions, and fail to capture changes in message propagation caused by these modifications. In this work, we propose a proximal Bregman response function specifically tailored for GNNs, relaxing the convexity requirement and enabling accurate influence prediction for standard neural network architectures. Furthermore, our method explicitly accounts for message propagation effects and extends influence prediction to both edge deletions and insertions in a principled way. Experiments with real-world datasets demonstrate accurate influence predictions for different characteristics of GNNs. We further demonstrate that the influence function is versatile in applications such as graph rewiring and adversarial attacks.}
-}
-
-@article{heo2023epic,
-  title={EPIC: graph augmentation with edit path interpolation via learnable cost},
-  author={Heo*, Jaeseung and Lee*, Seungbeom and Ahn, Sungsoo and Kim, Dongwoo},
-  journal={International Joint Conference on Artificial Intelligence (IJCAI)},
-  year={2024},
-  selected={true},
-  arxiv={2306.01310},
-  abstract={Data augmentation plays a critical role in improving model performance across various domains, but it becomes challenging with graph data due to their complex and irregular structure. To address this issue, we propose EPIC (Edit Path Interpolation via learnable Cost), a novel interpolation-based method for augmenting graph datasets. To interpolate between two graphs lying in an irregular domain, EPIC leverages the concept of graph edit distance, constructing an edit path that represents the transformation process between two graphs via edit operations. Moreover, our method introduces a context-sensitive cost model that accounts for the importance of specific edit operations formulated through a learning framework. This allows for a more nuanced transformation process, where the edit distance is not merely count-based but reflects meaningful graph attributes. With randomly sampled graphs from the edit path, we enrich the training set to enhance the generalization capability of classification models. Experimental evaluations across several benchmark datasets demonstrate that our approach outperforms existing augmentation techniques in many tasks.}
-}
 
 
 
