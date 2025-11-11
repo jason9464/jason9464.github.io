@@ -26,7 +26,6 @@
           <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
         {% endif %}
       {% endif %}
-      <!--
       {% if entry.preview %}
         {% if entry.preview contains '://' %}
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
@@ -44,16 +43,9 @@
           %}
         {% endif %}
       {% endif %}
-      -->
     </div>
   {% endif %}
 
-
-  <div class="col-sm-4">
-    {%- if entry.img_path -%}
-      {% include figure.html path=entry.img_path class="img-fluid rounded z-depth-1" zoomable=true %}
-    {%- endif -%}
-  </div>
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
