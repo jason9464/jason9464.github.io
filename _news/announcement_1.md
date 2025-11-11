@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:page_facing_up: A paper has been accepeted to IJCAI 2024.
+:page_facing_up: A paper has been accepted to IJCAI 2024.
