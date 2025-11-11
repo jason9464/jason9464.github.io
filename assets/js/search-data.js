@@ -384,7 +384,10 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-i-m-delighted-to-share-that-i-recently-got-married-and-began-a-new-chapter-in-my-life-ring",
+            },},{id: "news-page-facing-up-a-paper-has-been-accpeted-to-ijcai-2024",
+          title: ':page_facing_up: A paper has been accpeted to IJCAI 2024.',
+          description: "",
+          section: "News",},{id: "news-i-m-delighted-to-share-that-i-recently-got-married-and-began-a-new-chapter-in-my-life-ring",
           title: 'I’m delighted to share that I recently got married and began a new...',
           description: "",
           section: "News",},{id: "projects-project-1",
