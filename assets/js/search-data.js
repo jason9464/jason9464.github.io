@@ -387,8 +387,8 @@ ninja.data = [{
             },},{id: "news-page-facing-up-a-paper-has-been-accepted-to-ijcai-2024",
           title: ':page_facing_up: A paper has been accepted to IJCAI 2024.',
           description: "",
-          section: "News",},{id: "news-page-facing-up-a-paper-has-been-accepeted-to-icml-2024",
-          title: ':page_facing_up: A paper has been accepeted to ICML 2024.',
+          section: "News",},{id: "news-page-facing-up-a-paper-has-been-accepted-to-icml-2024",
+          title: ':page_facing_up: A paper has been accepted to ICML 2024.',
           description: "",
           section: "News",},{id: "news-ring-i-m-delighted-to-share-that-i-recently-got-married-and-began-a-new-chapter-in-my-life",
           title: ':ring: I’m delighted to share that I recently got married and began a...',
@@ -450,6 +450,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("mailto:%6A%73%68%65%6F%31%32%33%30%34@%70%6F%73%74%65%63%68.%61%63.%6B%72", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/jaeseungheo", "_blank");
         },
       },{
         id: 'social-scholar',
