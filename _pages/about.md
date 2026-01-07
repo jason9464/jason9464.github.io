@@ -24,4 +24,4 @@ latest_posts:
 ---
 
 Hi, I’m Jaeseung Heo, a Ph.D. student at [POSTECH ML Lab](https://ml.postech.ac.kr) under the supervision of [Prof. Dongwoo Kim](https://dongwookim-ml.github.io/).
-I study how data processing (e.g., augmentation) can improve model training and how data influences models (e.g., through influence functions and Shapley values). My primary research focus is on graph-structured data and its unique challenges.
+My research investigates how data shapes model behavior, focusing on training data attribution and influence functions. My work on graph neural networks explores data quality, influence quantification, and data augmentation. I'm now extending these methods to understand training data attribution in large language models.
