@@ -1,5 +1,16 @@
 ---
 ---
+@article{heo2026interaction,
+  title={Interaction-Aware Influence Functions for Group Attribution}, 
+  author={Heo, Jaeseung and Yun, Kyeongheung and Choi, Youngbin and Hwang, Sehyun and Ok, Jungseul and Kim, Dongwoo},
+  journal={arXiv preprint},
+  year={2026},
+  selected={true},
+  arxiv={2605.15675},
+  abstract={Influence functions approximate how removing a training example changes a quantity of interest, called the target function, such as a held-out loss. To estimate the influence of a group of examples, the standard practice is to sum the individual influences of its members. However, this sum does not capture how examples jointly affect the target: a pair of examples may be redundant or complementary, but the sum cannot distinguish these cases. We propose an interaction-aware influence function that characterizes how interactions between examples influence the target. By expanding the target to second order around the trained parameters, we obtain an estimator that augments the standard sum with a pairwise interaction term that captures the alignment between two examples' effects on the target. We empirically evaluate our estimator in two settings. First, on six dataset-model pairs spanning logistic regression, MLPs, and ResNet-9, our estimator tracks leave-group-out retraining substantially better than first-order influence across all settings. Second, when used as a greedy selection rule for instruction-tuning data on Llama-3.1-8B, it beats prior influence-based and representation-similarity baselines on five of seven downstream tasks, in a regime where standard influence-based selection underperforms random selection.}
+}
+
+
 @article{heo2024posterior,
   title={Posterior Label Smoothing for Node Classification},
   author={Heo, Jaeseung and Park, Moonjeong and Kim, Dongwoo},
