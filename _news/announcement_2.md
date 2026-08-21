@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:page_facing_up: A paper has been accepted to ICML 2024.
+:page_facing_up: Our paper _"Mitigating Oversmoothing through Reverse Process of GNNs for Heterophilic Graphs"_ has been accepted to ICML 2024.

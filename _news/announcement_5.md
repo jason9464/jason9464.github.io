@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:page_facing_up: A paper has been accepted to AAAI 2026 (Oral).
+:page_facing_up: Our paper _"Posterior Label Smoothing for Node Classification"_ has been accepted to AAAI 2026 (Oral).

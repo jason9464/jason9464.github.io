@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:page_facing_up: A paper has been accepted to NeurIPS 2025.
+:page_facing_up: Our paper _"Influence Functions for Edge Edits in Non-Convex Graph Neural Networks"_ has been accepted to NeurIPS 2025.
