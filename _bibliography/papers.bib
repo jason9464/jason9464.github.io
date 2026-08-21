@@ -3,7 +3,7 @@
 @article{cho2026long,
   title={Long Live the Librarian! A Persistent Search Sub-Agent for Energy-Efficient Multi-Agent Software Engineering Systems},
   author={Cho, Seunghyuk and Choi, Sunghyun and Heo, Jaeseung and Choi, Youngbin and Moon, Saemi and Park, MoonJeong and Kim, Dongwoo},
-  journal={arXiv preprint},
+  journal={The Conference on Empirical Methods in Natural Language Processing (<span style="color:#b509ac;">EMNLP</span>)},
   year={2026},
   arxiv={2605.27787},
   abstract={Multi-agent systems (MAS) have substantially advanced autonomous software engineering (SWE), but their growing inference energy demands raise sustainability concerns. In this paper, we demonstrate that this cost is concentrated in an overlooked source: redundant output tokens generated across agents. Two empirical findings ground this claim. First, our per-token energy attribution for MAS reveals a sharp asymmetry: an output token consumes 30 to 1,000 times more energy than an input or cached token. Second, MAS inflate per-episode output because agents repeatedly re-explore overlapping repository regions. To address this inefficiency, we propose Librarian, a persistent search sub-agent that tracks repository-search history and suppresses redundant exploration actions across agents. By returning short references to file regions instead of full file excerpts, Librarian further reduces output-token volume. On SWE-Bench Verified, Librarian reduces per-episode GPU energy consumption of existing multi-agent SWE systems by up to 25% while preserving task performance.}
