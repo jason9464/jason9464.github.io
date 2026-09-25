@@ -5,6 +5,8 @@
   author={Cho, Seunghyuk and Choi, Sunghyun and Heo, Jaeseung and Choi, Youngbin and Moon, Saemi and Park, MoonJeong and Kim, Dongwoo},
   journal={Conference on Empirical Methods in Natural Language Processing (<span style="color:#b509ac;">EMNLP</span>)},
   year={2026},
+  selected={true},
+  oral={true},
   arxiv={2605.27787},
   abstract={Multi-agent systems (MAS) have substantially advanced autonomous software engineering (SWE), but their growing inference energy demands raise sustainability concerns. In this paper, we demonstrate that this cost is concentrated in an overlooked source: redundant output tokens generated across agents. Two empirical findings ground this claim. First, our per-token energy attribution for MAS reveals a sharp asymmetry: an output token consumes 30 to 1,000 times more energy than an input or cached token. Second, MAS inflate per-episode output because agents repeatedly re-explore overlapping repository regions. To address this inefficiency, we propose Librarian, a persistent search sub-agent that tracks repository-search history and suppresses redundant exploration actions across agents. By returning short references to file regions instead of full file excerpts, Librarian further reduces output-token volume. On SWE-Bench Verified, Librarian reduces per-episode GPU energy consumption of existing multi-agent SWE systems by up to 25% while preserving task performance.}
 }
@@ -56,9 +58,9 @@
 @article{park2026transductive,
   title={Transductive Generalization via Optimal Transport and Its Application to Graph Node Classification},
   author={Park, MoonJeong and Lee, Seungbeom and Kim, Kyungmin and Heo, Jaeseung and Cho, Seunghyuk and Li, Shouheng and Park, Sangdon and Kim, Dongwoo},
-  journal={arXiv preprint},
+  journal={Advances in Neural Information Processing Systems (<span style="color:#b509ac;">NeurIPS</span>)},
   year={2026},
-  selected={false},
+  selected={true},
   arxiv={2603.09257},
   abstract={Many existing transductive bounds rely on classical complexity measures that are computationally intractable and often misaligned with empirical behavior. In this work, we establish new representation-based generalization bounds in a distribution-free transductive setting, where learned representations are dependent, and test features are accessible during training. We derive global and class-wise bounds via optimal transport, expressed in terms of Wasserstein distances between encoded feature distributions. We demonstrate that our bounds are efficiently computable and strongly correlate with empirical generalization in graph node classification, improving upon classical complexity measures. Additionally, our analysis reveals how the GNN aggregation process transforms the representation distributions, inducing a trade-off between intra-class concentration and inter-class separation. This yields depth-dependent characterizations that capture the non-monotonic relationship between depth and generalization error observed in practice.}
 }
