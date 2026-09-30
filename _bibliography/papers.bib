@@ -1,16 +1,14 @@
 ---
 ---
-@article{cho2026long,
-  title={Long Live the Librarian! A Persistent Search Sub-Agent for Energy-Efficient Multi-Agent Software Engineering Systems},
-  author={Cho, Seunghyuk and Choi, Sunghyun and Heo, Jaeseung and Choi, Youngbin and Moon, Saemi and Park, MoonJeong and Kim, Dongwoo},
-  journal={Conference on Empirical Methods in Natural Language Processing (<span style="color:#b509ac;">EMNLP</span>)},
+@article{heo2026scaling,
+  title={Scaling Influence Functions in LLMs through Eigenbasis-Corrected One-Bit Gradient Projection},
+  author={Heo, Jaeseung and Rosser, J and Kim, Dongwoo},
+  journal={arXiv preprint},
   year={2026},
   selected={true},
-  oral={true},
-  arxiv={2605.27787},
-  abstract={Multi-agent systems (MAS) have substantially advanced autonomous software engineering (SWE), but their growing inference energy demands raise sustainability concerns. In this paper, we demonstrate that this cost is concentrated in an overlooked source: redundant output tokens generated across agents. Two empirical findings ground this claim. First, our per-token energy attribution for MAS reveals a sharp asymmetry: an output token consumes 30 to 1,000 times more energy than an input or cached token. Second, MAS inflate per-episode output because agents repeatedly re-explore overlapping repository regions. To address this inefficiency, we propose Librarian, a persistent search sub-agent that tracks repository-search history and suppresses redundant exploration actions across agents. By returning short references to file regions instead of full file excerpts, Librarian further reduces output-token volume. On SWE-Bench Verified, Librarian reduces per-episode GPU energy consumption of existing multi-agent SWE systems by up to 25% while preserving task performance.}
+  arxiv={2609.37842},
+  abstract={Influence functions estimate how individual training examples affect the behavior of large language models (LLMs). Analyzing how training data influence different behaviors of an LLM involves repeated influence computation. Reusing stored training gradients reduces the computational cost, but storing full gradients is prohibitively expensive at LLM scale. We study how to compress these gradients while preserving influence estimates for future queries that are unknown at storage time. Through a worst-case analysis, we characterize the optimal fixed-dimensional linear representation and propose eigenbasis-corrected one-bit gradient projection (EOGP) to approximate it at scale. Specifically, EOGP uses EK-FAC to reduce gradient dimensionality, then applies PCA within the retained subspace to learn compression directions from the training gradients. We then apply one-bit quantization to the resulting coordinates, allowing more coordinates to be retained within a fixed storage budget. On GPT-2, EOGP predicts retraining outcomes more accurately than the evaluated compression baselines while using one-sixteenth of their per-example storage. On OLMo 2 SFT models from 1B to 32B parameters, EOGP remains competitive with the baselines allocated over 100 times as much storage per example.}
 }
-
 
 @article{heo2026interaction,
   title={Interaction-Aware Influence Functions for Group Attribution},
@@ -22,16 +20,36 @@
   abstract={Influence functions approximate how removing a training example changes a quantity of interest, called the target function, such as a held-out loss. To estimate the influence of a group of examples, the standard practice is to sum the individual influences of its members. However, this sum does not capture how examples jointly affect the target: a pair of examples may be redundant or complementary, but the sum cannot distinguish these cases. We propose an interaction-aware influence function that characterizes how interactions between examples influence the target. By expanding the target to second order around the trained parameters, we obtain an estimator that augments the standard sum with a pairwise interaction term that captures the alignment between two examples' effects on the target. We empirically evaluate our estimator in two settings. First, on six dataset-model pairs spanning logistic regression, MLPs, and ResNet-9, our estimator tracks leave-group-out retraining substantially better than first-order influence across all settings. Second, when used as a greedy selection rule for instruction-tuning data on Llama-3.1-8B, it beats prior influence-based and representation-similarity baselines on five of seven downstream tasks, in a regime where standard influence-based selection underperforms random selection.}
 }
 
-
 @article{heo2024posterior,
   title={Posterior Label Smoothing for Node Classification},
-  author={Heo, Jaeseung and Park, Moonjeong and Kim, Dongwoo},
+  author={Heo, Jaeseung and Park, MoonJeong and Kim, Dongwoo},
   journal={AAAI Conference on Artificial Intelligence (<span style="color:#b509ac;">AAAI</span>)},
   year={2026},
   selected={true},
   oral={true},
   arxiv={2406.00410},
   abstract={Soft labels can improve the generalization of a neural network classifier in many domains, such as image classification. Despite its success, the current literature has overlooked the efficiency of label smoothing in node classification with graph-structured data. In this work, we propose a simple yet effective label smoothing for the transductive node classification task. We design the soft label to encapsulate the local context of the target node through the neighborhood label distribution. We apply the smoothing method for seven baseline models to show its effectiveness. The label smoothing methods improve the classification accuracy in 10 node classification datasets in most cases. In the following analysis, we find that incorporating global label statistics in posterior computation is the key to the success of label smoothing. Further investigation reveals that the soft labels mitigate overfitting during training, leading to better generalization performance.}
+}
+
+@article{cho2026long,
+  title={Long Live the Librarian! A Persistent Search Sub-Agent for Energy-Efficient Multi-Agent Software Engineering Systems},
+  author={Cho, Seunghyuk and Choi, Sunghyun and Heo, Jaeseung and Choi, Youngbin and Moon, Saemi and Park, MoonJeong and Kim, Dongwoo},
+  journal={Conference on Empirical Methods in Natural Language Processing (<span style="color:#b509ac;">EMNLP</span>)},
+  year={2026},
+  selected={true},
+  oral={true},
+  arxiv={2605.27787},
+  abstract={Multi-agent systems (MAS) have substantially advanced autonomous software engineering (SWE), but their growing inference energy demands raise sustainability concerns. In this paper, we demonstrate that this cost is concentrated in an overlooked source: redundant output tokens generated across agents. Two empirical findings ground this claim. First, our per-token energy attribution for MAS reveals a sharp asymmetry: an output token consumes 30 to 1,000 times more energy than an input or cached token. Second, MAS inflate per-episode output because agents repeatedly re-explore overlapping repository regions. To address this inefficiency, we propose Librarian, a persistent search sub-agent that tracks repository-search history and suppresses redundant exploration actions across agents. By returning short references to file regions instead of full file excerpts, Librarian further reduces output-token volume. On SWE-Bench Verified, Librarian reduces per-episode GPU energy consumption of existing multi-agent SWE systems by up to 25% while preserving task performance.}
+}
+
+@article{park2026transductive,
+  title={Transductive Generalization via Optimal Transport and Its Application to Graph Node Classification},
+  author={Park*, MoonJeong and Lee*, Seungbeom and Kim, Kyungmin and Heo, Jaeseung and Cho, Seunghyuk and Li, Shouheng and Park, Sangdon and Kim, Dongwoo},
+  journal={Advances in Neural Information Processing Systems (<span style="color:#b509ac;">NeurIPS</span>)},
+  year={2026},
+  selected={true},
+  arxiv={2603.09257},
+  abstract={Many existing transductive bounds rely on classical complexity measures that are computationally intractable and often misaligned with empirical behavior. In this work, we establish new representation-based generalization bounds in a distribution-free transductive setting, where learned representations are dependent, and test features are accessible during training. We derive global and class-wise bounds via optimal transport, expressed in terms of Wasserstein distances between encoded feature distributions. We demonstrate that our bounds are efficiently computable and strongly correlate with empirical generalization in graph node classification, improving upon classical complexity measures. Additionally, our analysis reveals how the GNN aggregation process transforms the representation distributions, inducing a trade-off between intra-class concentration and inter-class separation. This yields depth-dependent characterizations that capture the non-monotonic relationship between depth and generalization error observed in practice.}
 }
 
 @article{heo2025influence,
@@ -44,6 +62,16 @@
   abstract={Understanding how individual edges influence the behavior of graph neural networks (GNNs) is essential for improving their interpretability and robustness. Graph influence functions have emerged as promising tools to efficiently estimate the effects of edge deletions without retraining. However, existing influence prediction methods rely on strict convexity assumptions, exclusively consider the influence of edge deletions while disregarding edge insertions, and fail to capture changes in message propagation caused by these modifications. In this work, we propose a proximal Bregman response function specifically tailored for GNNs, relaxing the convexity requirement and enabling accurate influence prediction for standard neural network architectures. Furthermore, our method explicitly accounts for message propagation effects and extends influence prediction to both edge deletions and insertions in a principled way. Experiments with real-world datasets demonstrate accurate influence predictions for different characteristics of GNNs. We further demonstrate that the influence function is versatile in applications such as graph rewiring and adversarial attacks.}
 }
 
+@article{park2025oversmoothing,
+  title={The Oversmoothing Fallacy: A Misguided Narrative in GNN Research},
+  author={Park, MoonJeong and Choi, Sunghyun and Heo, Jaeseung and Park, Eunhyeok and Kim, Dongwoo},
+  selected={true},
+  journal={arXiv preprint},
+  year={2025},
+  arxiv={2506.04653},
+  abstract={Oversmoothing has been recognized as a main obstacle to building deep Graph Neural Networks (GNNs), limiting the performance. This position paper argues that the influence of oversmoothing has been overstated and advocates for a further exploration of deep GNN architectures. Given the three core operations of GNNs, aggregation, linear transformation, and non-linear activation, we show that prior studies have mistakenly confused oversmoothing with the vanishing gradient, caused by transformation and activation rather than aggregation. Our finding challenges prior beliefs about oversmoothing being unique to GNNs. Furthermore, we demonstrate that classical solutions such as skip connections and normalization enable the successful stacking of deep GNN layers without performance degradation. Our results clarify misconceptions about oversmoothing and shed new light on the potential of deep GNNs.}
+}
+
 @article{heo2023epic,
   title={EPIC: Graph Augmentation with Edit Path Interpolation via Learnable Cost},
   author={Heo*, Jaeseung and Lee*, Seungbeom and Ahn, Sungsoo and Kim, Dongwoo},
@@ -52,27 +80,6 @@
   selected={true},
   arxiv={2306.01310},
   abstract={Data augmentation plays a critical role in improving model performance across various domains, but it becomes challenging with graph data due to their complex and irregular structure. To address this issue, we propose EPIC (Edit Path Interpolation via learnable Cost), a novel interpolation-based method for augmenting graph datasets. To interpolate between two graphs lying in an irregular domain, EPIC leverages the concept of graph edit distance, constructing an edit path that represents the transformation process between two graphs via edit operations. Moreover, our method introduces a context-sensitive cost model that accounts for the importance of specific edit operations formulated through a learning framework. This allows for a more nuanced transformation process, where the edit distance is not merely count-based but reflects meaningful graph attributes. With randomly sampled graphs from the edit path, we enrich the training set to enhance the generalization capability of classification models. Experimental evaluations across several benchmark datasets demonstrate that our approach outperforms existing augmentation techniques in many tasks.}
-}
-
-
-@article{park2026transductive,
-  title={Transductive Generalization via Optimal Transport and Its Application to Graph Node Classification},
-  author={Park, MoonJeong and Lee, Seungbeom and Kim, Kyungmin and Heo, Jaeseung and Cho, Seunghyuk and Li, Shouheng and Park, Sangdon and Kim, Dongwoo},
-  journal={Advances in Neural Information Processing Systems (<span style="color:#b509ac;">NeurIPS</span>)},
-  year={2026},
-  selected={true},
-  arxiv={2603.09257},
-  abstract={Many existing transductive bounds rely on classical complexity measures that are computationally intractable and often misaligned with empirical behavior. In this work, we establish new representation-based generalization bounds in a distribution-free transductive setting, where learned representations are dependent, and test features are accessible during training. We derive global and class-wise bounds via optimal transport, expressed in terms of Wasserstein distances between encoded feature distributions. We demonstrate that our bounds are efficiently computable and strongly correlate with empirical generalization in graph node classification, improving upon classical complexity measures. Additionally, our analysis reveals how the GNN aggregation process transforms the representation distributions, inducing a trade-off between intra-class concentration and inter-class separation. This yields depth-dependent characterizations that capture the non-monotonic relationship between depth and generalization error observed in practice.}
-}
-
-@article{park2025oversmoothing,
-  title={The Oversmoothing Fallacy: A Misguided Narrative in GNN Research},
-  author={Park, MoonJeong and Choi, Sunghyun and Heo, Jaeseung and Park, Eunhyeok and Kim, Dongwoo},
-  selected={false},
-  journal={arXiv preprint},
-  year={2025},
-  arxiv={2506.04653},
-  abstract={Oversmoothing has been recognized as a main obstacle to building deep Graph Neural Networks (GNNs), limiting the performance. This position paper argues that the influence of oversmoothing has been overstated and advocates for a further exploration of deep GNN architectures. Given the three core operations of GNNs, aggregation, linear transformation, and non-linear activation, we show that prior studies have mistakenly confused oversmoothing with the vanishing gradient, caused by transformation and activation rather than aggregation. Our finding challenges prior beliefs about oversmoothing being unique to GNNs. Furthermore, we demonstrate that classical solutions such as skip connections and normalization enable the successful stacking of deep GNN layers without performance degradation. Our results clarify misconceptions about oversmoothing and shed new light on the potential of deep GNNs.}
 }
 
 @article{park2024mitigating,
@@ -84,9 +91,3 @@
   arxiv={2403.10543},
   abstract={Graph Neural Network (GNN) resembles the diffusion process, leading to the over-smoothing of learned representations when stacking many layers. Hence, the reverse process of message passing can produce the distinguishable node representations by inverting the forward message propagation. The distinguishable representations can help us to better classify neighboring nodes with different labels, such as in heterophilic graphs. In this work, we apply the design principle of the reverse process to the three variants of the GNNs. Through the experiments on heterophilic graph data, where adjacent nodes need to have different representations for successful classification, we show that the reverse process significantly improves the prediction performance in many cases. Additional analysis reveals that the reverse mechanism can mitigate the over-smoothing over hundreds of layers.}
 }
-
-
-
-
-
-

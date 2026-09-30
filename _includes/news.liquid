@@ -14,7 +14,17 @@
         {% else %}
           {% assign news_limit = news_size %}
         {% endif %}
-        {% for item in news limit: news_limit %}
+        {% comment %} Items with `pinned: true` are never cut by the limit; they take slots from the oldest unpinned items. {% endcomment %}
+        {% assign pinned_size = site.news | where: 'pinned', true | size %}
+        {% assign unpinned_limit = news_limit | minus: pinned_size %}
+        {% assign unpinned_shown = 0 %}
+        {% for item in news %}
+          {% unless item.pinned %}
+            {% if unpinned_shown >= unpinned_limit %}
+              {% continue %}
+            {% endif %}
+            {% assign unpinned_shown = unpinned_shown | plus: 1 %}
+          {% endunless %}
           <tr>
             <th scope="row" style="width: 20%">{{ item.date | date: '%b, %Y' }}</th>
             <td>
