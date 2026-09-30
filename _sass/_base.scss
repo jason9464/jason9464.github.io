@@ -225,6 +225,11 @@ ul.task-list input[type="checkbox"] {
       }
     }
   }
+
+  // Keep the about text in its own column so it never wraps under the profile image.
+  .profile + .clearfix {
+    display: flow-root;
+  }
 }
 
 .post-description {

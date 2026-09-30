@@ -30,5 +30,3 @@ My research interests lie in understanding where the behaviors of large language
 - **Training data attribution for LLMs**: developing attribution methods applicable to LLMs, with the goal of scaling them to models with over 100B parameters.
 - **The science of pre- and post-training**: understanding which training data gives rise to which model behaviors, and whether filtering or perturbing the data can steer a model toward desired behaviors.
 - **Mechanistic interpretability**: explaining the mechanisms behind LLM behavior, with tools such as the Jacobian lens, sparse autoencoders, and cross-layer transcoders.
-
-My work so far has focused on influence functions and data-centric methods such as augmentation and label smoothing, mostly for graph neural networks.
