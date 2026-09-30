@@ -25,4 +25,10 @@ latest_posts:
 
 Hi, I’m Jaeseung Heo, a Ph.D. student at [POSTECH ML Lab](https://ml.postech.ac.kr) under the supervision of [Prof. Dongwoo Kim](https://dongwookim-ml.github.io/). I am currently taking part in the exploration phase of [MATS](https://www.matsprogram.org/) in Neel Nanda’s stream.
 
-My research interests lie in understanding where the behaviors of large language models come from, both in their training data and in their internal mechanisms. In particular, I am interested in three directions: **training data attribution** for LLMs, with the goal of developing attribution methods that scale to models with over 100B parameters; the **science of pre- and post-training**, which asks which training data gives rise to which model behaviors and whether filtering or perturbing the data can steer a model toward desired behaviors; and **mechanistic interpretability**, which explains the mechanisms behind LLM behavior with tools such as the Jacobian lens, sparse autoencoders, and cross-layer transcoders. My work so far has focused on influence functions and data-centric methods such as augmentation and label smoothing, mostly for graph neural networks.
+My research interests lie in understanding where the behaviors of large language models come from, both in their training data and in their internal mechanisms. In particular, I am interested in three directions:
+
+- **Training data attribution for LLMs**: developing attribution methods applicable to LLMs, with the goal of scaling them to models with over 100B parameters.
+- **The science of pre- and post-training**: understanding which training data gives rise to which model behaviors, and whether filtering or perturbing the data can steer a model toward desired behaviors.
+- **Mechanistic interpretability**: explaining the mechanisms behind LLM behavior, with tools such as the Jacobian lens, sparse autoencoders, and cross-layer transcoders.
+
+My work so far has focused on influence functions and data-centric methods such as augmentation and label smoothing, mostly for graph neural networks.

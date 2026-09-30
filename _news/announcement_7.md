@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:page_facing_up: Our paper _"Long Live the Librarian! A Persistent Search Sub-Agent for Energy-Efficient Multi-Agent Software Engineering Systems"_ has been accepted to EMNLP 2026 (Main).
+:page_facing_up: Our paper _"Long Live the Librarian! A Persistent Search Sub-Agent for Energy-Efficient Multi-Agent Software Engineering Systems"_ has been accepted to EMNLP 2026 (Oral).
